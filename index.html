@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>burger boss</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="contTitulo">
+        <p class="textTitulo">THE BURGER BOSS</p>
+    </div>
+    <div class="contProductos">
+        <div class="contOpciones">
+            <img class="img" src="img/Bread-basket-black-background_1920x1200.jpg" alt="pan_hamburguesa">
+            <div class="letras">
+                <input type="radio" name="pan" id="optArte">
+                <p>pan artesanal $5000</p>
+                <input type="radio" name="pan" id="optBri">
+                <p> pan briolle $8000</p>
+                <input type="radio" name="pan" id="optInt">
+                <p>pan integral $5000</p>
+                <input type="radio" name="pan" id="optAne">
+                <p>pan añejado $6000</p>
+                <button onclick="agregarP()" class="botonAdd">AGREGAR</button>
+            </div>
+        </div>
+        <div class="contOpciones">
+            <img class="img" src="img/proveedores-hamburguesa-ternera-clasica-200g_crs2.jpg" alt="carne_hamburguesas">
+            <div class="letras">
+                <input type="radio" name="carne" id="optPollo">
+                <p>pollo $20000</p>
+                <input type="radio" name="carne" id="optBufa">
+                <p>carne de bufalo $32000</p>
+                <input type="radio" name="carne" id="optRes">
+                <p>carne de res $20000</p>
+                <input type="radio" name="carne" id="optDoble">
+                <p>carne de res $35000<span>(doble)</span></p>
+                <button onclick="agregarC()" class="botonAdd">AGREGAR</button>
+            </div>
+        </div>
+        <div class="contOpciones">
+            <img class="img" src="img/las-frutas-y-verduras-de-la-bandeja-fondo-negro-400-24044023.jpg" alt="verduras_hamburguesa">
+            <div class="letras">
+                <input type="checkbox" name="vegetales" id="cboxMix1">
+                <p>lechuga, tomate, cebolla $3000</p>
+                <input type="checkbox" name="vegetales" id="cboxMix2">
+                <p>lechuga, pepinillos, tomate $4000</p>
+                <input type="checkbox" name="vegetales" id="cboxMix3">
+                <p>cebolla carameilizada $3000</p>
+                <input type="checkbox" name="vegetales" id="cboxMix4">
+                <p>personalizada $5000</p>
+                <button onclick="agregarV()" class="botonAdd">AGREGAR</button>
+            </div>
+        </div>
+        <div class="contOpciones">
+            <img class="img" src="img/muchos-tipos-salsas-sobre-fondo-negro_504796-164.jpg" alt="salsas_hamburguesas">
+            <div class="letras">
+                <input type="checkbox" name="salsas" id="cboxOp1">
+                <p>mix de: tomate, mayonesa, BBQ, mostaza dulce $5000 </p>
+                <input type="checkbox" name="salsas" id="cboxOp2">
+                <p>tartara, rosada, tomate $3000</p>
+                <input type="checkbox" name="salsas" id="cboxOp3">
+                <p>salsa especial $5000</p>
+                <input type="checkbox" name="salsas" id="cboxOp4">
+                <p>sin salsas $0</p>
+                <button onclick="agregarS()" class="botonAdd">AGREGAR</button>
+            </div>
+        </div>
+    </div>
+    <div class="contTitulo">
+
+    </div>
+    <button onclick="pagar()">pagar</button>
+    <script src="js/main.js"></script>
+</body>
+</html>
+
